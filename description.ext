@@ -1,0 +1,62 @@
+respawnOnStart = -1;
+
+
+class CfgFunctions {
+  class ZONT {
+    class Both {
+      file = "both";
+      class getTriggers {};
+    };
+    class Client {
+      file = "client";
+      class checkCuratorPermission {};
+      class endMission {};
+    };
+    class Server {
+      file = "server";
+      class init_zeusWatcher { postInit = 1; };
+      class giveZeus {};
+    };
+  };
+};
+
+class CfgRadio {
+  sounds[] = {};
+
+};
+
+class CfgDebriefing {
+  class loser1 {
+    title = "Пиздец";
+		subtitle = "Совсем ебанутые?";
+		description = "Вы долбоебы. Сожалеем.";
+		pictureBackground = "";
+		picture = "pic\monk.paa";
+  };
+  class inczeus {
+    title = "Нет прав играть на зевсе";
+    subtitle = "Ты либо додик, либо тебя не добавили";
+		description = "Если ты действительно ивентолог/ГМ, свяжись с администрацией";
+		pictureBackground = "";
+		picture = "pic\monk.paa";
+  };
+};
+
+class CfgDebriefingSections
+{
+	class Wtf
+	{
+		title = "Что это ебать";
+		variable = "OPV_kek";
+	};
+};
+
+class CfgSounds {
+    sounds[] = {};
+    class papich {
+        name = "";
+        sound[] = {"snd\arthas.ogg",10,1,100};
+        titles[] = {};
+        forceTitles = true;
+    };
+};
