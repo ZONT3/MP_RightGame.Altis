@@ -19,12 +19,16 @@ if !(_old isKindOf "ModuleCurator_F") then {
   _curator addCuratorAddons _addons;
   _curator setcuratorcoef["place", 0];
   _curator setcuratorcoef["delete", 0];
-  missionNamespace setVariable [_var, [_player, _curator], false];
 } else { _curator = _old };
 
-_null = [_this, _curator] spawn {
-  params ["_player", "_curator"];
-  sleep 0.4;
-  _player assignCurator _curator;
-  ["Вы назначены на роль куратора игры"] remoteExec ["systemChat", _player];
+if (!isNil "_curator" && !isNull _curator) then {
+  _null = [_this, _curator, [_var, [_player, _curator], false]] spawn {
+    params ["_player", "_curator", "_setvar"];
+    sleep 0.4;
+    _player assignCurator _curator;
+    missionNamespace setVariable _setvar;
+    ["Вы назначены на роль куратора игры"] remoteExec ["systemChat", _player];
+  }
+} else {
+  diag_log format ["Zeus has not been assigned to %1", _player];
 };
