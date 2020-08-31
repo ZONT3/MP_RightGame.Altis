@@ -5,5 +5,6 @@
   "76561198075026520", // Rouch
   "76561199063347236", // Enforcer
   "76561198331557593", // Basuda aka Kapkan
+  "76561198444339799", // Park aka Rikalov
   "76561198150530744"  // retarded person
 ]
