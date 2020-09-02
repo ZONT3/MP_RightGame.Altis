@@ -454,7 +454,7 @@ class AddonsMetaData
 randomSeed=1355032;
 class ScenarioData
 {
-	author="Floki, ZONT_";
+	author="Floki, ZONT_, Sugrot, TvG";
 	disabledAI=1;
 	respawn=3;
 	respawnDelay=60.000004;
