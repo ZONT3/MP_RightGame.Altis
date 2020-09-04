@@ -8,11 +8,11 @@ class EditorData
 	toggles=1545;
 	class ItemIDProvider
 	{
-		nextID=8563;
+		nextID=8564;
 	};
 	class MarkerIDProvider
 	{
-		nextID=111;
+		nextID=112;
 	};
 	class LayerIndexProvider
 	{
@@ -7336,7 +7336,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=200;
+		items=201;
 		class Item0
 		{
 			dataType="Group";
@@ -85932,6 +85932,17 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item200
+		{
+			dataType="Marker";
+			position[]={15158.669,17.864,17316.152};
+			name="marker_111";
+			text="РР";
+			type="mil_dot";
+			colorName="ColorEAST";
+			id=8563;
+			atlOffset=3.8146973e-006;
 		};
 	};
 };
