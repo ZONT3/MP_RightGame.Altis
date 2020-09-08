@@ -4915,7 +4915,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=3;
+														value=6;
 													};
 												};
 												class Item1
@@ -4960,7 +4960,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=3;
+														value=6;
 													};
 												};
 												class Item1
@@ -6689,7 +6689,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=3;
+														value=3.5;
 													};
 												};
 												class Item1
@@ -6734,7 +6734,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=3;
+														value=3.5;
 													};
 												};
 												class Item1
@@ -74729,7 +74729,7 @@ class Mission
 										};
 										class value
 										{
-											items=440;
+											items=439;
 											class Item0
 											{
 												class data
@@ -80313,7 +80313,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_WaterBottle_Half";
+													value="ACE_Humanitarian_Ration";
 												};
 											};
 											class Item399
@@ -80327,7 +80327,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_Humanitarian_Ration";
+													value="ACE_tourniquet";
 												};
 											};
 											class Item400
@@ -80341,7 +80341,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_tourniquet";
+													value="ACE_SpottingScope";
 												};
 											};
 											class Item401
@@ -80355,7 +80355,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_SpottingScope";
+													value="ACE_DefusalKit";
 												};
 											};
 											class Item402
@@ -80369,7 +80369,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_DefusalKit";
+													value="ACE_wirecutter";
 												};
 											};
 											class Item403
@@ -80383,7 +80383,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_wirecutter";
+													value="ACE_bloodIV";
 												};
 											};
 											class Item404
@@ -80397,7 +80397,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_bloodIV";
+													value="ACE_bloodIV_250";
 												};
 											};
 											class Item405
@@ -80411,7 +80411,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_bloodIV_250";
+													value="ACE_bloodIV_500";
 												};
 											};
 											class Item406
@@ -80425,7 +80425,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_bloodIV_500";
+													value="ACE_bodyBag";
 												};
 											};
 											class Item407
@@ -80439,7 +80439,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_bodyBag";
+													value="MineDetector";
 												};
 											};
 											class Item408
@@ -80453,7 +80453,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="MineDetector";
+													value="ACE_morphine";
 												};
 											};
 											class Item409
@@ -80467,7 +80467,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_morphine";
+													value="ToolKit";
 												};
 											};
 											class Item410
@@ -80481,7 +80481,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ToolKit";
+													value="ACE_quikclot";
 												};
 											};
 											class Item411
@@ -80495,7 +80495,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_quikclot";
+													value="ACE_plasmaIV";
 												};
 											};
 											class Item412
@@ -80509,7 +80509,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_plasmaIV";
+													value="ACE_fieldDressing";
 												};
 											};
 											class Item413
@@ -80523,7 +80523,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_fieldDressing";
+													value="ACE_elasticBandage";
 												};
 											};
 											class Item414
@@ -80537,7 +80537,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_elasticBandage";
+													value="ACE_Tripod";
 												};
 											};
 											class Item415
@@ -80551,7 +80551,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_Tripod";
+													value="ACE_salineIV";
 												};
 											};
 											class Item416
@@ -80565,7 +80565,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_salineIV";
+													value="ACE_salineIV_250";
 												};
 											};
 											class Item417
@@ -80579,7 +80579,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_salineIV_250";
+													value="ACE_salineIV_500";
 												};
 											};
 											class Item418
@@ -80593,7 +80593,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_salineIV_500";
+													value="ACE_EntrenchingTool";
 												};
 											};
 											class Item419
@@ -80607,7 +80607,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_EntrenchingTool";
+													value="ACE_SpraypaintBlue";
 												};
 											};
 											class Item420
@@ -80621,7 +80621,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_SpraypaintBlue";
+													value="ACE_MRE_CreamChickenSoup";
 												};
 											};
 											class Item421
@@ -80635,7 +80635,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_MRE_CreamChickenSoup";
+													value="ACE_MRE_ChickenTikkaMasala";
 												};
 											};
 											class Item422
@@ -80649,7 +80649,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_MRE_ChickenTikkaMasala";
+													value="ACE_MRE_ChickenHerbDumplings";
 												};
 											};
 											class Item423
@@ -80663,7 +80663,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_MRE_ChickenHerbDumplings";
+													value="ACE_MRE_CreamTomatoSoup";
 												};
 											};
 											class Item424
@@ -80677,7 +80677,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_MRE_CreamTomatoSoup";
+													value="ACE_MRE_MeatballsPasta";
 												};
 											};
 											class Item425
@@ -80691,7 +80691,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_MRE_MeatballsPasta";
+													value="ACE_MRE_SteakVegetables";
 												};
 											};
 											class Item426
@@ -80705,7 +80705,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_MRE_SteakVegetables";
+													value="ACE_MRE_BeefStew";
 												};
 											};
 											class Item427
@@ -80719,7 +80719,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_MRE_BeefStew";
+													value="ACE_Can_Franta";
 												};
 											};
 											class Item428
@@ -80733,7 +80733,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_Can_Franta";
+													value="ACE_Can_Spirit";
 												};
 											};
 											class Item429
@@ -80747,7 +80747,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_Can_Spirit";
+													value="arifle_av_bul";
 												};
 											};
 											class Item430
@@ -80761,7 +80761,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="arifle_av_bul";
+													value="av_bul_mod2";
 												};
 											};
 											class Item431
@@ -80775,7 +80775,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="av_bul_mod2";
+													value="av_bul_cam";
 												};
 											};
 											class Item432
@@ -80789,7 +80789,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="av_bul_cam";
+													value="arifle_av_sr22m";
 												};
 											};
 											class Item433
@@ -80803,7 +80803,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="arifle_av_sr22m";
+													value="optic_Arco";
 												};
 											};
 											class Item434
@@ -80817,7 +80817,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="optic_Arco";
+													value="rhs_acc_1p63";
 												};
 											};
 											class Item435
@@ -80831,7 +80831,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="rhs_acc_1p63";
+													value="av_p69";
 												};
 											};
 											class Item436
@@ -80845,7 +80845,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="av_p69";
+													value="rhs_weap_pkp";
 												};
 											};
 											class Item437
@@ -80859,24 +80859,10 @@ class Mission
 															"STRING"
 														};
 													};
-													value="rhs_weap_pkp";
-												};
-											};
-											class Item438
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
 													value="av_pkp_base";
 												};
 											};
-											class Item439
+											class Item438
 											{
 												class data
 												{
