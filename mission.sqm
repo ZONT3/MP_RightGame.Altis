@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15159.564,148.00839,17279.373};
-		dir[]={0.37587315,-0.85371244,0.36043569};
-		up[]={0.61618912,0.52073723,0.59088182};
-		aside[]={0.6921345,-1.831213e-007,-0.72177827};
+		pos[]={15202.608,58.000381,17299.518};
+		dir[]={0.49970353,-0.72273988,0.47748256};
+		up[]={0.52255744,0.69109505,0.49931777};
+		aside[]={0.69086039,-5.1280949e-007,-0.72301131};
 	};
 };
 binarizationWanted=0;
@@ -103937,7 +103937,7 @@ class Mission
 										};
 										class value
 										{
-											items=714;
+											items=719;
 											class Item0
 											{
 												class data
@@ -113932,6 +113932,76 @@ class Mission
 														};
 													};
 													value="rhs_weap_ak104";
+												};
+											};
+											class Item714
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="av_spart";
+												};
+											};
+											class Item715
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="av_spart5";
+												};
+											};
+											class Item716
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="av_spart2";
+												};
+											};
+											class Item717
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="av_spart3";
+												};
+											};
+											class Item718
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="av_spart4";
 												};
 											};
 										};
