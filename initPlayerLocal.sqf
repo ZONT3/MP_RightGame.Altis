@@ -3,7 +3,9 @@ params ["_player", "_didJIP"];
 private _west_approved = [
   "76561198190855027", // Sugrot
   "76561198122600375" // moskva
-]
+];
+
+_west_approved = _west_approved arrayIntersect compile preprocessFile "curators.sqf";
 
 if (_player isKindOf "VirtualCurator_F") then {
   true call ZONT_fnc_checkCuratorPermission;
@@ -17,7 +19,7 @@ if (side _player == blufor) then {
     false;
   };
   _player setPos getPos MP_spawn_west;
-}
+};
 
 if (side _player == opfor) then {
   /*****                       Move player to spawn                       *****/
