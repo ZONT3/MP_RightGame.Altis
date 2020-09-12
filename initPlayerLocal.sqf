@@ -1,17 +1,18 @@
 params ["_player", "_didJIP"];
 
 private _west_approved = [
-  "76561198049381049" // Мельников
+  "76561198058158985", // ya
+  "76561198049381049"  // Мельников
 ];
 
-_west_approved = _west_approved arrayIntersect compile preprocessFile "curators.sqf";
+_west_approved append call compile preprocessFile "curators.sqf";
 
 if (_player isKindOf "VirtualCurator_F") then {
   true call ZONT_fnc_checkCuratorPermission;
 };
 
 if (side _player == blufor) then {
-  if !(getPlayerUID _player in _west_approved) then {
+  if (!(getPlayerUID _player in _west_approved)) then {
     systemChat "У вас нет прав играть за США";
     failMission "incwest";
     forceEnd;
