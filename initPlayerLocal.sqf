@@ -8,7 +8,7 @@ if (side _player in [opfor/*, blufor, independent*/]) then {
   _g deleteGroupWhenEmpty true;
 
   /*****                       Markers for Leaders                        *****/
-  MPC_ldSpawn = [] spawn {
+  /* MPC_ldSpawn = [] spawn {
     while {true} do {
         if (leader player == player) then {
           private _i = 0;
@@ -31,7 +31,7 @@ if (side _player in [opfor/*, blufor, independent*/]) then {
         };
         sleep 0.2;
     }
-  };
+  }; */
 
   /*****                     Add third-person blocker                     *****/
   if ([] call ZONT_fnc_checkCuratorPermission) exitWith {};
