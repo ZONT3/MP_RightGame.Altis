@@ -1,8 +1,7 @@
 params ["_player", "_didJIP"];
 
 private _west_approved = [
-  "76561198190855027", // Sugrot
-  "76561198122600375" // moskva
+  "76561198049381049" // Мельников
 ];
 
 _west_approved = _west_approved arrayIntersect compile preprocessFile "curators.sqf";
