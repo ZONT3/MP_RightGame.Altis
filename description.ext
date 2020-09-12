@@ -40,6 +40,13 @@ class CfgDebriefing {
 		pictureBackground = "";
 		picture = "pic\monk.paa";
   };
+  class incwest {
+    title = "Нет прав играть на синих";
+    subtitle = "Ты либо додик, либо тебя не добавили";
+		description = "Если ты действительно считаешь, что можешь играть за США, свяжись с администрацией";
+		pictureBackground = "";
+		picture = "pic\monk.paa";
+  };
 };
 
 class CfgDebriefingSections
