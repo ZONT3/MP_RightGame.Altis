@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14961.048,31.435432,16270.966};
-		dir[]={-0.46683958,-0.70643586,0.53217274};
-		up[]={-0.46587843,0.70774317,0.53108174};
-		aside[]={0.75181657,1.1443044e-006,0.65951324};
+		pos[]={15193.857,479.1926,15915.388};
+		dir[]={-0.44512108,-0.77896333,0.44193566};
+		up[]={-0.55280232,0.62702209,0.54885191};
+		aside[]={0.70463711,9.7427983e-007,0.70971078};
 	};
 };
 binarizationWanted=0;
@@ -18504,22 +18504,22 @@ class Mission
 				class Item9
 				{
 					dataType="Trigger";
-					position[]={14958.281,32.977036,16266.885};
+					position[]={14739.151,32.891426,15897.259};
 					angle=5.4978218;
 					class Attributes
 					{
 						name="MPT_thirdPerson_9";
-						sizeA=33.38105;
-						sizeB=20.309929;
+						sizeA=495.27081;
+						sizeB=130.86034;
 						isRectangle=1;
 					};
 					id=8548;
 					type="EmptyDetectorAreaR50";
-					atlOffset=15.206215;
+					atlOffset=21.375771;
 				};
 			};
 			id=7815;
-			atlOffset=6.6914673;
+			atlOffset=6.6493607;
 		};
 		class Item2
 		{
