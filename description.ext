@@ -16,6 +16,12 @@ class CfgFunctions {
       file = "server";
       class init_zeusWatcher { postInit = 1; };
       class giveZeus {};
+
+      class init_autoEvents { postInit = 1; };
+      class spawnEvent { };
+      class addEventPos { };
+      class completeNearestAE { };
+      class ae_toDestroy { };
     };
   };
 };
