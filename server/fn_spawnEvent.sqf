@@ -72,7 +72,6 @@ private _fn_checkList = {
   if (count _list == 0) exitWith { false };
   {
     private _f = [_str, _x] call CBA_fnc_find;
-    /* diag_log format ["AE: %1 starts with %2 at %3", _str, _x, _f]; */
     if (_f == 0) exitWith { true };
     false;
   } forEach _list;
