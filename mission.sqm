@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=1545;
 	class ItemIDProvider
 	{
-		nextID=14613;
+		nextID=14668;
 	};
 	class MarkerIDProvider
 	{
-		nextID=305;
+		nextID=317;
 	};
 	class LayerIndexProvider
 	{
-		nextID=265;
+		nextID=274;
 	};
 	class Camera
 	{
-		pos[]={15247.156,106.71738,17297.17};
-		dir[]={-0.33758065,-0.8651197,0.3711099};
-		up[]={-0.58214784,0.50154471,0.63996941};
-		aside[]={0.73977852,-1.4094403e-006,0.67294323};
+		pos[]={15131.221,55.915096,17356.369};
+		dir[]={0.62365133,-0.67969418,-0.38634938};
+		up[]={0.57786763,0.73342949,-0.35798681};
+		aside[]={-0.52668053,-9.4497227e-007,-0.85018027};
 	};
 };
 binarizationWanted=0;
@@ -154,13 +154,15 @@ addons[]=
 	"A3_Structures_F_Civ_Market",
 	"CUP_CAMisc",
 	"A3_Structures_F_EPA_Civ_Constructions",
-	"A3_Structures_F_Exp_Industrial_SurfaceMine_01"
+	"A3_Structures_F_Exp_Industrial_SurfaceMine_01",
+	"av_UAZ_patp",
+	"xs_xs_car_xsPaz"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=94;
+		items=96;
 		class Item0
 		{
 			className="CUP_Creatures_Military_Russia";
@@ -753,6 +755,16 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item94
+		{
+			className="av_UAZ_patp";
+			name="av_UAZ_patp";
+		};
+		class Item95
+		{
+			className="xs_xs_car_xsPaz";
+			name="xs_xs_car_xsPaz";
+		};
 	};
 };
 randomSeed=1355032;
@@ -765,7 +777,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -1062,7 +1074,7 @@ class CustomAttributes
 		};
 		nAttributes=4;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -10588,7 +10600,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=633;
+		items=652;
 		class Item0
 		{
 			dataType="Group";
@@ -18633,8 +18645,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+							property="ENH_disableAI_move";
+							expression="if(_value) then {_this disableAI 'MOVE'}";
 							class Value
 							{
 								class data
@@ -18643,10 +18655,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="PATCH_AV_rus3";
+									value=1;
 								};
 							};
 						};
@@ -19231,8 +19243,8 @@ class Mission
 						};
 						class Attribute27
 						{
-							property="ENH_disableAI_move";
-							expression="if(_value) then {_this disableAI 'MOVE'}";
+							property="unitInsignia";
+							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 							class Value
 							{
 								class data
@@ -19241,10 +19253,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="PATCH_AV_rus3";
 								};
 							};
 						};
@@ -19442,8 +19454,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+							property="ENH_disableAI_move";
+							expression="if(_value) then {_this disableAI 'MOVE'}";
 							class Value
 							{
 								class data
@@ -19452,10 +19464,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="PATCH_AV_rus3";
+									value=1;
 								};
 							};
 						};
@@ -20087,8 +20099,8 @@ class Mission
 						};
 						class Attribute28
 						{
-							property="ENH_disableAI_move";
-							expression="if(_value) then {_this disableAI 'MOVE'}";
+							property="unitInsignia";
+							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 							class Value
 							{
 								class data
@@ -20097,10 +20109,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="PATCH_AV_rus3";
 								};
 							};
 						};
@@ -20317,8 +20329,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+							property="ENH_disableAI_move";
+							expression="if(_value) then {_this disableAI 'MOVE'}";
 							class Value
 							{
 								class data
@@ -20327,10 +20339,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="PATCH_AV_rus3";
+									value=1;
 								};
 							};
 						};
@@ -20910,8 +20922,8 @@ class Mission
 						};
 						class Attribute26
 						{
-							property="ENH_disableAI_move";
-							expression="if(_value) then {_this disableAI 'MOVE'}";
+							property="unitInsignia";
+							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 							class Value
 							{
 								class data
@@ -20920,10 +20932,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="PATCH_AV_rus3";
 								};
 							};
 						};
@@ -21179,8 +21191,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="ENH_disableAI_checkVisible";
-							expression="if(_value) then {_this disableAI 'CHECKVISIBLE'}";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -21189,17 +21201,17 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"SCALAR"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
 						class Attribute2
 						{
-							property="ENH_disableAI_move";
-							expression="if(_value) then {_this disableAI 'MOVE'}";
+							property="unitInsignia";
+							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 							class Value
 							{
 								class data
@@ -21208,10 +21220,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="PATCH_AV_rus3";
 								};
 							};
 						};
@@ -21772,8 +21784,8 @@ class Mission
 						};
 						class Attribute26
 						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							property="ENH_disableAI_checkVisible";
+							expression="if(_value) then {_this disableAI 'CHECKVISIBLE'}";
 							class Value
 							{
 								class data
@@ -21782,17 +21794,17 @@ class Mission
 									{
 										type[]=
 										{
-											"SCALAR"
+											"BOOL"
 										};
 									};
-									value=0;
+									value=1;
 								};
 							};
 						};
 						class Attribute27
 						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+							property="ENH_disableAI_move";
+							expression="if(_value) then {_this disableAI 'MOVE'}";
 							class Value
 							{
 								class data
@@ -21801,10 +21813,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="PATCH_AV_rus3";
+									value=1;
 								};
 							};
 						};
@@ -22010,8 +22022,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="ENH_disableAI_move";
-							expression="if(_value) then {_this disableAI 'MOVE'}";
+							property="unitInsignia";
+							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 							class Value
 							{
 								class data
@@ -22020,10 +22032,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="PATCH_AV_45orp";
 								};
 							};
 						};
@@ -22636,8 +22648,8 @@ class Mission
 						};
 						class Attribute27
 						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+							property="ENH_disableAI_move";
+							expression="if(_value) then {_this disableAI 'MOVE'}";
 							class Value
 							{
 								class data
@@ -22646,10 +22658,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="PATCH_AV_45orp";
+									value=1;
 								};
 							};
 						};
@@ -50759,7 +50771,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15159.875,18.907946,17325.445};
+						position[]={15159.875,18.907944,17325.445};
 						angles[]={0,0.75831068,0};
 					};
 					side="Empty";
@@ -50770,7 +50782,7 @@ class Mission
 					};
 					id=8206;
 					type="rhs_weapon_crate";
-					atlOffset=0.020442963;
+					atlOffset=0.020441055;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -50842,7 +50854,7 @@ class Mission
 												};
 												class value
 												{
-													items=286;
+													items=316;
 													class Item0
 													{
 														class data
@@ -54845,6 +54857,426 @@ class Mission
 																};
 															};
 															value="rhs_100Rnd_762x54mmR";
+														};
+													};
+													class Item286
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_BeigeDigital";
+														};
+													};
+													class Item287
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesClosed_BeigeDigital";
+														};
+													};
+													class Item288
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesDown_BeigeDigital";
+														};
+													};
+													class Item289
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesUp_BeigeDigital";
+														};
+													};
+													class Item290
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_U_O_RUS_Ratnik_BeigeDigital";
+														};
+													};
+													class Item291
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_BeigeDigital";
+														};
+													};
+													class Item292
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_VOG_BeigeDigital";
+														};
+													};
+													class Item293
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_PKP_BeigeDigital";
+														};
+													};
+													class Item294
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_O_RUS_Patrol_bag_BeigeDigital_Shovel";
+														};
+													};
+													class Item295
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_O_RUS_Patrol_bag_BeigeDigital";
+														};
+													};
+													class Item296
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="rhs_weap_rpg7";
+														};
+													};
+													class Item297
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="rhs_weap_rshg2";
+														};
+													};
+													class Item298
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="rhs_weap_rpg26";
+														};
+													};
+													class Item299
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="rhs_rpg7_OG7V_mag";
+														};
+													};
+													class Item300
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="rhs_rpg7_PG7VL_mag";
+														};
+													};
+													class Item301
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="rhs_rpg7_PG7VM_mag";
+														};
+													};
+													class Item302
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="rhs_rpg7_PG7VR_mag";
+														};
+													};
+													class Item303
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="rhs_rpg7_PG7VS_mag";
+														};
+													};
+													class Item304
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="rhs_rpg7_PG7V_mag";
+														};
+													};
+													class Item305
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_Desert";
+														};
+													};
+													class Item306
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesClosed_Desert";
+														};
+													};
+													class Item307
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesDown_Desert";
+														};
+													};
+													class Item308
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesUp_Desert";
+														};
+													};
+													class Item309
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_U_O_RUS_Ratnik_Desert";
+														};
+													};
+													class Item310
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_U_O_RUS_Ratnik_Pink";
+														};
+													};
+													class Item311
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_Desert";
+														};
+													};
+													class Item312
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_VOG_Desert";
+														};
+													};
+													class Item313
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_PKP_Desert";
+														};
+													};
+													class Item314
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_O_RUS_Patrol_bag_Desert";
+														};
+													};
+													class Item315
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_O_RUS_Patrol_bag_Desert_Shovel";
 														};
 													};
 												};
@@ -64670,7 +65102,7 @@ class Mission
 												};
 												class value
 												{
-													items=321;
+													items=342;
 													class Item0
 													{
 														class data
@@ -69165,6 +69597,300 @@ class Mission
 															value="Laserdesignator";
 														};
 													};
+													class Item321
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_U_O_RUS_Ratnik_Pink";
+														};
+													};
+													class Item322
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_U_O_RUS_Ratnik_Desert";
+														};
+													};
+													class Item323
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_U_O_RUS_Ratnik_BeigeDigital";
+														};
+													};
+													class Item324
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_O_RUS_Patrol_bag_Desert_Shovel";
+														};
+													};
+													class Item325
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_O_RUS_Patrol_bag_Desert";
+														};
+													};
+													class Item326
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_O_RUS_Patrol_bag_BeigeDigital_Shovel";
+														};
+													};
+													class Item327
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_O_RUS_Patrol_bag_BeigeDigital";
+														};
+													};
+													class Item328
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesUp_BeigeDigital";
+														};
+													};
+													class Item329
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesDown_BeigeDigital";
+														};
+													};
+													class Item330
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesClosed_BeigeDigital";
+														};
+													};
+													class Item331
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_BeigeDigital";
+														};
+													};
+													class Item332
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_Desert";
+														};
+													};
+													class Item333
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesClosed_Desert";
+														};
+													};
+													class Item334
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesDown_Desert";
+														};
+													};
+													class Item335
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_H_RUS_6B47_v2_GogglesUp_Desert";
+														};
+													};
+													class Item336
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_Desert";
+														};
+													};
+													class Item337
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_VOG_Desert";
+														};
+													};
+													class Item338
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_PKP_Desert";
+														};
+													};
+													class Item339
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_PKP_BeigeDigital";
+														};
+													};
+													class Item340
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_VOG_BeigeDigital";
+														};
+													};
+													class Item341
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="CUP_Vest_RUS_6B45_Sh117_BeigeDigital";
+														};
+													};
 												};
 											};
 										};
@@ -72432,8 +73158,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+							property="ENH_disableAI_move";
+							expression="if(_value) then {_this disableAI 'MOVE'}";
 							class Value
 							{
 								class data
@@ -72442,10 +73168,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="PATCH_AV_rus3";
+									value=1;
 								};
 							};
 						};
@@ -73030,8 +73756,8 @@ class Mission
 						};
 						class Attribute27
 						{
-							property="ENH_disableAI_move";
-							expression="if(_value) then {_this disableAI 'MOVE'}";
+							property="unitInsignia";
+							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 							class Value
 							{
 								class data
@@ -73040,10 +73766,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="PATCH_AV_rus3";
 								};
 							};
 						};
@@ -93770,11 +94496,11 @@ class Mission
 		class Item266
 		{
 			dataType="Marker";
-			position[]={17230.246,13.393403,12819.177};
+			position[]={14298.659,-3.0316162,13140.823};
 			name="marker_128";
 			type="flag_Russia";
 			id=9034;
-			atlOffset=-4.1640978;
+			atlOffset=5.2078762;
 		};
 		class Item267
 		{
@@ -100271,7 +100997,7 @@ class Mission
 			fillName="FDiagonal";
 			a=399.11743;
 			b=1644.6692;
-			angle=0.8813706;
+			angle=0.88137054;
 			id=9784;
 			atlOffset=-11.593882;
 		};
@@ -101144,23 +101870,23 @@ class Mission
 		class Item406
 		{
 			dataType="Marker";
-			position[]={4009.7727,0,27465.609};
+			position[]={4009.7727,0,26855.016};
 			name="marker_268";
 			markerType="RECTANGLE";
 			type="rectangle";
 			colorName="ColorWhite";
 			alpha=0.75415111;
 			a=4005.7319;
-			b=3237.8411;
+			b=3848.4358;
 			id=9904;
-			atlOffset=185.97;
+			atlOffset=180.815;
 		};
 		class Item407
 		{
 			dataType="Marker";
 			position[]={24272.014,-0.016000001,349.98801};
 			name="marker_269";
-			text="1.6  /  Created by Sugrot and ZONT_";
+			text="1.7.1 /  Created by Sugrot and ZONT_";
 			type="mil_dot";
 			colorName="ColorBlue";
 			id=9905;
@@ -104032,7 +104758,7 @@ class Mission
 			fillName="Horizontal";
 			a=385.43939;
 			b=1466.5143;
-			angle=95.371017;
+			angle=95.37101;
 			id=10169;
 			atlOffset=248.53381;
 		};
@@ -160966,8 +161692,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="ENH_disableAI_checkVisible";
-							expression="if(_value) then {_this disableAI 'CHECKVISIBLE'}";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -160976,17 +161702,17 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"SCALAR"
 										};
 									};
-									value=1;
+									value=2;
 								};
 							};
 						};
 						class Attribute2
 						{
-							property="ENH_disableAI_move";
-							expression="if(_value) then {_this disableAI 'MOVE'}";
+							property="unitInsignia";
+							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 							class Value
 							{
 								class data
@@ -160995,10 +161721,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="PATCH_AV_rus3";
 								};
 							};
 						};
@@ -161592,8 +162318,8 @@ class Mission
 						};
 						class Attribute27
 						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							property="ENH_disableAI_checkVisible";
+							expression="if(_value) then {_this disableAI 'CHECKVISIBLE'}";
 							class Value
 							{
 								class data
@@ -161602,17 +162328,17 @@ class Mission
 									{
 										type[]=
 										{
-											"SCALAR"
+											"BOOL"
 										};
 									};
-									value=2;
+									value=1;
 								};
 							};
 						};
 						class Attribute28
 						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+							property="ENH_disableAI_move";
+							expression="if(_value) then {_this disableAI 'MOVE'}";
 							class Value
 							{
 								class data
@@ -161621,10 +162347,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="PATCH_AV_rus3";
+									value=1;
 								};
 							};
 						};
@@ -189258,7 +189984,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15229.291,18.960459,17331.152};
+				position[]={15229.291,18.960463,17331.152};
 				angles[]={0.00090757123,5.5421357,0.0017627826};
 			};
 			side="Empty";
@@ -189269,7 +189995,7 @@ class Mission
 			};
 			id=12393;
 			type="rhs_launcher_crate";
-			atlOffset=0.0085601807;
+			atlOffset=0.0085639954;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -189303,7 +190029,7 @@ class Mission
 										};
 										class value
 										{
-											items=230;
+											items=251;
 											class Item0
 											{
 												class data
@@ -192524,6 +193250,300 @@ class Mission
 													value="ACE_CableTie";
 												};
 											};
+											class Item230
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_H_RUS_6B47_v2_Desert";
+												};
+											};
+											class Item231
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_H_RUS_6B47_v2_GogglesClosed_Desert";
+												};
+											};
+											class Item232
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_H_RUS_6B47_v2_GogglesDown_Desert";
+												};
+											};
+											class Item233
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_H_RUS_6B47_v2_GogglesUp_Desert";
+												};
+											};
+											class Item234
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_U_O_RUS_Ratnik_Desert";
+												};
+											};
+											class Item235
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_U_O_RUS_Ratnik_Pink";
+												};
+											};
+											class Item236
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_Vest_RUS_6B45_Sh117_Desert";
+												};
+											};
+											class Item237
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_Vest_RUS_6B45_Sh117_VOG_Desert";
+												};
+											};
+											class Item238
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_Vest_RUS_6B45_Sh117_PKP_Desert";
+												};
+											};
+											class Item239
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_O_RUS_Patrol_bag_Desert_Shovel";
+												};
+											};
+											class Item240
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_O_RUS_Patrol_bag_Desert";
+												};
+											};
+											class Item241
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_O_RUS_Patrol_bag_BeigeDigital_Shovel";
+												};
+											};
+											class Item242
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_O_RUS_Patrol_bag_BeigeDigital";
+												};
+											};
+											class Item243
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_Vest_RUS_6B45_Sh117_BeigeDigital";
+												};
+											};
+											class Item244
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_Vest_RUS_6B45_Sh117_VOG_BeigeDigital";
+												};
+											};
+											class Item245
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_Vest_RUS_6B45_Sh117_PKP_BeigeDigital";
+												};
+											};
+											class Item246
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_U_O_RUS_Ratnik_BeigeDigital";
+												};
+											};
+											class Item247
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_H_RUS_6B47_v2_GogglesClosed_BeigeDigital";
+												};
+											};
+											class Item248
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_H_RUS_6B47_v2_BeigeDigital";
+												};
+											};
+											class Item249
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_H_RUS_6B47_v2_GogglesDown_BeigeDigital";
+												};
+											};
+											class Item250
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="CUP_H_RUS_6B47_v2_GogglesUp_BeigeDigital";
+												};
+											};
 										};
 									};
 								};
@@ -194659,8 +195679,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+							property="ENH_disableAI_move";
+							expression="if(_value) then {_this disableAI 'MOVE'}";
 							class Value
 							{
 								class data
@@ -194669,10 +195689,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="PATCH_AV_rus3";
+									value=1;
 								};
 							};
 						};
@@ -195257,8 +196277,8 @@ class Mission
 						};
 						class Attribute27
 						{
-							property="ENH_disableAI_move";
-							expression="if(_value) then {_this disableAI 'MOVE'}";
+							property="unitInsignia";
+							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 							class Value
 							{
 								class data
@@ -195267,10 +196287,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="PATCH_AV_rus3";
 								};
 							};
 						};
@@ -195566,7 +196586,7 @@ class Mission
 			fillName="FDiagonal";
 			a=610.13025;
 			b=1676.7107;
-			angle=279.96381;
+			angle=279.96378;
 			id=14609;
 			atlOffset=-5.9000397;
 		};
@@ -195581,7 +196601,7 @@ class Mission
 			fillName="FDiagonal";
 			a=479.90051;
 			b=1644.6692;
-			angle=353.05896;
+			angle=353.05893;
 			id=14610;
 		};
 		class Item631
@@ -195610,9 +196630,271 @@ class Mission
 			fillName="FDiagonal";
 			a=479.90051;
 			b=423.64709;
-			angle=318.25534;
+			angle=318.25531;
 			id=14612;
 			atlOffset=-6.5139294;
+		};
+		class Item633
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15166.009,19.405134,17325.131};
+				angles[]={-0,5.5358896,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=14642;
+			type="av_UAZ_patp2";
+		};
+		class Item634
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15157.145,19.674459,17356.578};
+				angles[]={0.0013372133,0,0.010664274};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=14643;
+			type="xspaz_army";
+			atlOffset=-5.7220459e-006;
+		};
+		class Item635
+		{
+			dataType="Marker";
+			position[]={18137.83,0,9700.6055};
+			name="marker_305";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=1000;
+			b=1000;
+			id=14647;
+			atlOffset=-97.780609;
+		};
+		class Item636
+		{
+			dataType="Marker";
+			position[]={19461.871,72.151001,10895.035};
+			name="marker_306";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=633.26355;
+			b=1808.2975;
+			angle=60.275105;
+			id=14648;
+			atlOffset=20.468513;
+		};
+		class Item637
+		{
+			dataType="Marker";
+			position[]={21006.402,-88.47683,11470.31};
+			name="marker_307";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=1000;
+			b=1000;
+			id=14649;
+			atlOffset=-117.83636;
+		};
+		class Item638
+		{
+			dataType="Marker";
+			position[]={21387.457,48.986664,17855.984};
+			name="marker_308";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=633.26355;
+			b=2736.7998;
+			angle=334.1955;
+			id=14651;
+			atlOffset=24.133266;
+		};
+		class Item639
+		{
+			dataType="Marker";
+			position[]={21009.002,66.035645,16979.885};
+			name="marker_309";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=633.26398;
+			b=691.15784;
+			angle=330.95856;
+			id=14652;
+			atlOffset=27.598164;
+		};
+		class Item640
+		{
+			dataType="Marker";
+			position[]={20841.574,67.38855,7460.6582};
+			name="marker_310";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=1380.0237;
+			b=1320.2876;
+			angle=330.95856;
+			id=14654;
+			atlOffset=42.999077;
+		};
+		class Item641
+		{
+			dataType="Marker";
+			position[]={11123.105,161.19312,8148.6328};
+			name="marker_311";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=1380.0237;
+			b=1454.3052;
+			angle=330.95856;
+			id=14655;
+			atlOffset=21.846512;
+		};
+		class Item642
+		{
+			dataType="Marker";
+			position[]={9284.7178,20.468513,11053.069};
+			name="marker_312";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=633.26355;
+			b=2408.4211;
+			angle=258.30228;
+			id=14656;
+			atlOffset=1.5535831;
+		};
+		class Item643
+		{
+			dataType="Marker";
+			position[]={5062.856,99.356606,11435.742};
+			name="marker_313";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=633.26355;
+			b=2408.4211;
+			angle=292.70279;
+			id=14657;
+			atlOffset=38.731201;
+		};
+		class Item644
+		{
+			dataType="Marker";
+			position[]={3981.415,34.072067,14942.705};
+			name="marker_314";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=633.26355;
+			b=2408.4211;
+			angle=9.4195127;
+			id=14658;
+			atlOffset=29.195194;
+		};
+		class Item645
+		{
+			dataType="Marker";
+			position[]={6117.2041,37.585701,15648.739};
+			name="marker_315";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=633.26355;
+			b=2408.4211;
+			angle=60.049839;
+			id=14659;
+			atlOffset=4.4830551;
+		};
+		class Item646
+		{
+			dataType="Marker";
+			position[]={8083.4272,153.75772,16819.57};
+			name="marker_316";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=1380.0237;
+			b=1320.2876;
+			angle=330.95856;
+			id=14661;
+			atlOffset=-55.101089;
+		};
+		class Item647
+		{
+			dataType="Marker";
+			position[]={5363.5854,284.93494,21476.271};
+			name="marker_317";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=1380.0237;
+			b=1320.2876;
+			angle=330.95856;
+			id=14662;
+			atlOffset=42.9991;
+		};
+		class Item648
+		{
+			dataType="Marker";
+			position[]={9069.54,59.981323,21835.357};
+			name="marker_318";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=633.26355;
+			b=2874.8403;
+			angle=85.292152;
+			id=14664;
+			atlOffset=45.956627;
+		};
+		class Item649
+		{
+			dataType="Marker";
+			position[]={1000,-0.037999999,23999.992};
+			name="marker_202";
+			text="Зона БД";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorOrange";
+			a=600;
+			b=600;
+			id=14665;
+			atlOffset=185.93201;
+		};
+		class Item650
+		{
+			dataType="Marker";
+			position[]={976.17798,0,24015.652};
+			name="marker_240";
+			text="Зона из которой можно не вернуться живым";
+			type="mil_dot";
+			colorName="ColorRed";
+			id=14666;
+			atlOffset=185.97;
+		};
+		class Item651
+		{
+			dataType="Marker";
+			position[]={16872.691,18.118328,12714.662};
+			name="marker_246";
+			type="Faction_CUP_TKM";
+			angle=179.48831;
+			id=14667;
+			atlOffset=-1.2451153;
 		};
 	};
 };
